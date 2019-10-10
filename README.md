@@ -2,6 +2,20 @@
 The model identifiers and model names of Apple devices.
 
 
+## UIDevice Extensions
+To get the model identifier of the current device:
+
+```swift
+let modelIdentifier = UIDevice.current.modelIdentifier
+```
+
+To get the model name of the current device:
+
+```swift
+let modelName = UIDevice.current.modelName
+```
+
+
 ## [iPad](https://support.apple.com/en-us/HT201471)
 ### iPad Pro
 | Model Name | Model Identifier |
