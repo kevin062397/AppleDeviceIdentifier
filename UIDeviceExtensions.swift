@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIDevice {
-	
 	var modelIdentifier: String {
 		var systemInfo = utsname()
 		uname(&systemInfo)
@@ -22,11 +21,11 @@ extension UIDevice {
 		}
 		return identifier
 	}
-	
+
 	var modelName: String {
 		return self.mapToDevice(identifier: self.modelIdentifier)
 	}
-	
+
 	fileprivate func mapToDevice(identifier: String) -> String {
 		#if os(iOS)
 		switch identifier {
@@ -43,6 +42,14 @@ extension UIDevice {
 			return "iPad Pro 11-inch"
 		case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":
 			return "iPad Pro 12.9-inch (3rd generation)"
+		case "iPad8,9", "iPad8,10":
+			return "iPad Pro 11-inch (2nd generation)"
+		case "iPad8,11", "iPad8,12":
+			return "iPad Pro 12.9-inch (4th generation)"
+		case "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7":
+			return "iPad Pro 11-inch (3rd generation)"
+		case "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11":
+			return "iPad Pro 12.9-inch (5th generation)"
 		// iPad Air
 		case "iPad4,1", "iPad4,2", "iPad4,3":
 			return "iPad Air"
@@ -50,6 +57,8 @@ extension UIDevice {
 			return "iPad Air 2"
 		case "iPad11,3", "iPad11,4":
 			return "iPad Air (3rd generation)"
+		case "iPad13,1", "iPad13,2":
+			return "iPad Air (4th generation)"
 		// iPad
 		case "iPad1,1":
 			return "iPad"
@@ -65,6 +74,8 @@ extension UIDevice {
 			return "iPad (6th generation)"
 		case "iPad7,11", "iPad7,12":
 			return "iPad (7th generation)"
+		case "iPad11,6", "iPad11,7":
+			return "iPad (8th generation)"
 		// iPad mini
 		case "iPad2,5", "iPad2,6", "iPad2,7":
 			return "iPad mini"
@@ -125,6 +136,16 @@ extension UIDevice {
 			return "iPhone 11 Pro"
 		case "iPhone12,5":
 			return "iPhone 11 Pro Max"
+		case "iPhone12,8":
+			return "iPhone SE (2nd generation)"
+		case "iPhone13,1":
+			return "iPhone 12 mini"
+		case "iPhone13,2":
+			return "iPhone 12"
+		case "iPhone13,3":
+			return "iPhone 12 Pro"
+		case "iPhone13,4":
+			return "iPhone 12 Pro Max"
 		// iPod touch
 		case "iPod1,1":
 			return "iPod Touch"
@@ -143,8 +164,10 @@ extension UIDevice {
 		// HomePod
 		case "AudioAccessory1,1":
 			return "HomePod"
+		case "AudioAccessory5,1":
+			return "HomePod mini"
 		// Simulator
-		case "i386", "x86_64":
+		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS"))"
 		default:
 			return identifier
@@ -161,7 +184,13 @@ extension UIDevice {
 			return "Apple Watch Series 3"
 		case "Watch4,1", "Watch4,2", "Watch4,3", "Watch4,4":
 			return "Apple Watch Series 4"
-		case "i386", "x86_64":
+		case "Watch5,1", "Watch5,2", "Watch5,3", "Watch5,4":
+			return "Apple Watch Series 5"
+		case "Watch5,9", "Watch5,10", "Watch5,11", "Watc5,12":
+			return "Apple Watch SE"
+		case "Watch6,1", "Watch6,2", "Watch6,3", "Watch6,4":
+			return "Apple Watch Series 6"
+		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "watchOS"))"
 		default:
 			return identifier
@@ -180,12 +209,11 @@ extension UIDevice {
 			return "Apple TV HD"
 		case "AppleTV6,2":
 			return "Apple TV 4K"
-		case "i386", "x86_64":
+		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "tvOS"))"
 		default:
 			return identifier
 		}
 		#endif
 	}
-	
 }
