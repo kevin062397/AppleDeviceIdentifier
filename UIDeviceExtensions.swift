@@ -50,6 +50,10 @@ extension UIDevice {
 			return "iPad Pro 11-inch (3rd generation)"
 		case "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11":
 			return "iPad Pro 12.9-inch (5th generation)"
+		case "iPad14,3", "iPad14,4":
+			return "iPad Pro 11-inch (4th generation)"
+		case "iPad14,5", "iPad14,6":
+			return "iPad Pro 12.9-inch (6th generation)"
 		// iPad Air
 		case "iPad4,1", "iPad4,2", "iPad4,3":
 			return "iPad Air"
@@ -59,6 +63,8 @@ extension UIDevice {
 			return "iPad Air (3rd generation)"
 		case "iPad13,1", "iPad13,2":
 			return "iPad Air (4th generation)"
+		case "iPad13,16", "iPad13,17":
+			return "iPad Air (5th generation)"
 		// iPad
 		case "iPad1,1":
 			return "iPad"
@@ -76,6 +82,10 @@ extension UIDevice {
 			return "iPad (7th generation)"
 		case "iPad11,6", "iPad11,7":
 			return "iPad (8th generation)"
+		case "iPad12,1", "iPad12,2":
+			return "iPad (9th generation)"
+		case "iPad13,18", "iPad13,19":
+			return "iPad (10th generation)"
 		// iPad mini
 		case "iPad2,5", "iPad2,6", "iPad2,7":
 			return "iPad mini"
@@ -87,6 +97,8 @@ extension UIDevice {
 			return "iPad mini 4"
 		case "iPad11,1", "iPad11,2":
 			return "iPad mini (5th generation)"
+		case "iPad14,1", "iPad14,2":
+			return "iPad mini (6th generation)"
 		// iPhone
 		case "iPhone1,1":
 			return "iPhone"
@@ -146,6 +158,24 @@ extension UIDevice {
 			return "iPhone 12 Pro"
 		case "iPhone13,4":
 			return "iPhone 12 Pro Max"
+		case "iPhone14,2":
+			return "iPhone 13 Pro"
+		case "iPhone14,3":
+			return "iPhone 13 Pro Max"
+		case "iPhone14,4":
+			return "iPhone 13 mini"
+		case "iPhone14,5":
+			return "iPhone 13"
+		case "iPhone14,6":
+			return "iPhone SE (3rd generation)"
+		case "iPhone14,7":
+			return "iPhone 14"
+		case "iPhone14,8":
+			return "iPhone 14 Plus"
+		case "iPhone15,2":
+			return "iPhone 14 Pro"
+		case "iPhone15,3":
+			return "iPhone 14 Pro Max"
 		// iPod touch
 		case "iPod1,1":
 			return "iPod Touch"
@@ -161,11 +191,6 @@ extension UIDevice {
 			return "iPod Touch (6th generation)"
 		case "iPod9,1":
 			return "iPod Touch (7th generation)"
-		// HomePod
-		case "AudioAccessory1,1":
-			return "HomePod"
-		case "AudioAccessory5,1":
-			return "HomePod mini"
 		// Simulator
 		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS"))"
@@ -187,9 +212,17 @@ extension UIDevice {
 		case "Watch5,1", "Watch5,2", "Watch5,3", "Watch5,4":
 			return "Apple Watch Series 5"
 		case "Watch5,9", "Watch5,10", "Watch5,11", "Watc5,12":
-			return "Apple Watch SE"
+			return "Apple Watch SE (1st generation)"
 		case "Watch6,1", "Watch6,2", "Watch6,3", "Watch6,4":
 			return "Apple Watch Series 6"
+		case "Watch6,6", "Watch6,7", "Watch6,8", "Watch6,9":
+			return "Apple Watch Series 7"
+		case "Watch6,10", "Watch6,11", "Watch6,12", "Watch6,13":
+			return "Apple Watch SE (2nd generation)"
+		case "Watch6,14", "Watch6,15", "Watch6,16", "Watch6,17":
+			return "Apple Watch Series 8"
+		case "Watch6,18":
+			return "Apple Watch Ultra"
 		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "watchOS"))"
 		default:
@@ -208,7 +241,11 @@ extension UIDevice {
 		case "AppleTV5,3":
 			return "Apple TV HD"
 		case "AppleTV6,2":
-			return "Apple TV 4K"
+			return "Apple TV 4K (1st generation)"
+		case "AppleTV11,1":
+			return "Apple TV 4K (2nd generation)"
+		case "AppleTV14,1":
+			return "Apple TV 4K (3rd generation)"
 		case "i386", "x86_64", "arm64":
 			return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "tvOS"))"
 		default:
