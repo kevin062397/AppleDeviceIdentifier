@@ -22,10 +22,10 @@ let modelName = UIDevice.current.modelName
 
 | Model Name                                                                  | Model Identifier                               |
 | --------------------------------------------------------------------------- | ---------------------------------------------- |
-| [iPad Pro (9.7-inch)](https://support.apple.com/kb/SP739)                   | iPad6,3 \| iPad6,4                             |
 | [iPad Pro (12.9-inch)](https://support.apple.com/kb/SP723)                  | iPad6,7 \| iPad6,8                             |
-| [iPad Pro (12.9-inch) (2nd generation)](https://support.apple.com/kb/SP761) | iPad7,1 \| iPad7,2                             |
+| [iPad Pro (9.7-inch)](https://support.apple.com/kb/SP739)                   | iPad6,3 \| iPad6,4                             |
 | [iPad Pro (10.5-inch)](https://support.apple.com/kb/SP762)                  | iPad7,3 \| iPad7,4                             |
+| [iPad Pro (12.9-inch) (2nd generation)](https://support.apple.com/kb/SP761) | iPad7,1 \| iPad7,2                             |
 | [iPad Pro 11-inch (1st generation)](https://support.apple.com/kb/SP784)     | iPad8,1 \| iPad8,2 \| iPad8,3 \| iPad8,4       |
 | [iPad Pro 12.9-inch (3rd generation)](https://support.apple.com/kb/SP785)   | iPad8,5 \| iPad8,6 \| iPad8,7 \| iPad8,8       |
 | [iPad Pro 11-inch (2nd generation)](https://support.apple.com/kb/SP814)     | iPad8,9 \| iPad8,10                            |
@@ -104,10 +104,10 @@ let modelName = UIDevice.current.modelName
 | [iPhone 12](https://support.apple.com/kb/SP830)                  | iPhone13,2                          |
 | [iPhone 12 Pro](https://support.apple.com/kb/SP831)              | iPhone13,3                          |
 | [iPhone 12 Pro Max](https://support.apple.com/kb/SP832)          | iPhone13,4                          |
-| [iPhone 13 Pro](https://support.apple.com/kb/SP852)              | iPhone14,2                          |
-| [iPhone 13 Pro Max](https://support.apple.com/kb/SP848)          | iPhone14,3                          |
 | [iPhone 13 mini](https://support.apple.com/kb/SP847)             | iPhone14,4                          |
 | [iPhone 13](https://support.apple.com/kb/SP851)                  | iPhone14,5                          |
+| [iPhone 13 Pro](https://support.apple.com/kb/SP852)              | iPhone14,2                          |
+| [iPhone 13 Pro Max](https://support.apple.com/kb/SP848)          | iPhone14,3                          |
 | [iPhone SE (3rd generation)](https://support.apple.com/kb/SP867) | iPhone14,6                          |
 | [iPhone 14](https://support.apple.com/kb/SP873)                  | iPhone14,7                          |
 | [iPhone 14 Plus](https://support.apple.com/kb/SP874)             | iPhone14,8                          |
