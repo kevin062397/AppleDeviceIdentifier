@@ -34,6 +34,8 @@ let modelName = UIDevice.current.modelName
 | [iPad Pro 12.9-inch (5th generation)](https://support.apple.com/kb/SP844)   | iPad13,8 \| iPad13,9 \| iPad13,10 \| iPad13,11 |
 | [iPad Pro 11-inch (4th generation)](https://support.apple.com/kb/SP882)     | iPad14,3 \| iPad14,4                           |
 | [iPad Pro 12.9-inch (6th generation)](https://support.apple.com/kb/SP883)   | iPad14,5 \| iPad14,6                           |
+| [iPad Pro 11-inch (M4)](https://support.apple.com/119892)                   | iPad16,3 \| iPad16,4                           |
+| [iPad Pro 13-inch (M4)](https://support.apple.com/119891)                   | iPad16,5 \| iPad16,6                           |
 
 ### iPad Air
 
@@ -44,6 +46,10 @@ let modelName = UIDevice.current.modelName
 | [iPad Air (3rd generation)](https://support.apple.com/kb/SP787) | iPad11,3 \| iPad11,4          |
 | [iPad Air (4th generation)](https://support.apple.com/kb/SP828) | iPad13,1 \| iPad13,2          |
 | [iPad Air (5th generation)](https://support.apple.com/kb/SP866) | iPad13,16 \| iPad13,17        |
+| [iPad Air 11-inch (M2)](https://support.apple.com/119894)       | iPad14,8 \| iPad14,9          |
+| [iPad Air 13-inch (M2)](https://support.apple.com/119893)       | iPad14,10 \| iPad14,11        |
+| [iPad Air 11-inch (M3)](https://support.apple.com/122241)       |                               |
+| [iPad Air 13-inch (M3)](https://support.apple.com/122242)       |                               |
 
 ### iPad
 
@@ -59,6 +65,7 @@ let modelName = UIDevice.current.modelName
 | [iPad (8th generation)](https://support.apple.com/kb/SP822)  | iPad11,6 \| iPad11,7                     |
 | [iPad (9th generation)](https://support.apple.com/kb/SP849)  | iPad12,1 \| iPad12,2                     |
 | [iPad (10th generation)](https://support.apple.com/kb/SP884) | iPad13,18 \| iPad13,19                   |
+| [iPad (A16)](https://support.apple.com/122240)               | iPad15,7 \| iPad15,8                     |
 
 ### iPad mini
 
@@ -70,6 +77,7 @@ let modelName = UIDevice.current.modelName
 | [iPad mini 4](https://support.apple.com/kb/SP725)                | iPad5,1 \| iPad5,2            |
 | [iPad mini (5th generation)](https://support.apple.com/kb/SP788) | iPad11,1 \| iPad11,2          |
 | [iPad mini (6th generation)](https://support.apple.com/kb/SP850) | iPad14,1 \| iPad14,2          |
+| [iPad mini (A17 Pro)](https://support.apple.com/121456)          | iPad16,1 \| iPad16,2          |
 
 ## [iPhone](https://support.apple.com/en-us/HT201296)
 
@@ -112,7 +120,16 @@ let modelName = UIDevice.current.modelName
 | [iPhone 14](https://support.apple.com/kb/SP873)                  | iPhone14,7                          |
 | [iPhone 14 Plus](https://support.apple.com/kb/SP874)             | iPhone14,8                          |
 | [iPhone 14 Pro](https://support.apple.com/kb/SP875)              | iPhone15,2                          |
-| [iPhone 14 Pro Max](https://support.apple.com/kb/sp876)          | iPhone15,3                          |
+| [iPhone 14 Pro Max](https://support.apple.com/kb/SP876)          | iPhone15,3                          |
+| [iPhone 15](https://support.apple.com/kb/SP901)                  | iPhone15,4                          |
+| [iPhone 15 Plus](https://support.apple.com/kb/SP902)             | iPhone15,5                          |
+| [iPhone 15 Pro](https://support.apple.com/kb/SP903)              | iPhone16,1                          |
+| [iPhone 15 Pro Max](https://support.apple.com/kb/SP904)          | iPhone16,2                          |
+| [iPhone 16](https://support.apple.com/121029)                    | iPhone17,3                          |
+| [iPhone 16 Plus](https://support.apple.com/121030)               | iPhone17,4                          |
+| [iPhone 16 Pro](https://support.apple.com/121031)                | iPhone17,1                          |
+| [iPhone 16 Pro Max](https://support.apple.com/121032)            | iPhone17,2                          |
+| [iPhone 16e](https://support.apple.com/122208)                   | iPhone17,5                          |
 
 ## [iPod touch](https://support.apple.com/en-us/HT204217)
 
@@ -142,6 +159,9 @@ let modelName = UIDevice.current.modelName
 | [Apple Watch SE (2nd generation)](https://support.apple.com/kb/SP877) | Watch6,10 \| Watch6,11 \| Watch6,12 \| Watch6,13 |
 | [Apple Watch Series 8](https://support.apple.com/kb/SP878)            | Watch6,14 \| Watch6,15 \| Watch6,16 \| Watch6,17 |
 | [Apple Watch Ultra](https://support.apple.com/kb/SP879)               | Watch6,18                                        |
+| [Apple Watch Series 9](https://support.apple.com/kb/SP905)            | Watch7,1 \| Watch7,2 \| Watch7,3 \| Watch7,4     |
+| [Apple Watch Ultra 2](https://support.apple.com/kb/SP906)             | Watch7,5                                         |
+| [Apple Watch Series 10](https://support.apple.com/121202)             | Watch7,8 \| Watch7,9 \| Watch7,10 \| Watch7,11   |
 
 ## [Apple TV](https://support.apple.com/en-us/HT200008)
 
@@ -155,6 +175,12 @@ let modelName = UIDevice.current.modelName
 | [Apple TV 4K (1st generation)](https://support.apple.com/kb/SP769)    | AppleTV6,2       |
 | [Apple TV 4K (2nd generation)](https://support.apple.com/kb/SP845)    | AppleTV11,1      |
 | [Apple TV 4K (3rd generation)](https://support.apple.com/kb/SP886)    | AppleTV14,1      |
+
+## Vision
+
+| Model Name                                             | Model Identifier  |
+| ------------------------------------------------------ | ----------------- |
+| [Apple Vision Pro](https://support.apple.com/kb/SP911) | RealityDevice14,1 |
 
 ## [HomePod](https://support.apple.com/en-us/HT211109)
 
