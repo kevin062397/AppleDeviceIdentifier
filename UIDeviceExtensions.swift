@@ -73,6 +73,10 @@ extension UIDevice {
             return "iPad Air 11-inch (M2)"
         case "iPad14,10", "iPad14,11":
             return "iPad Air 13-inch (M2)"
+        case "iPad15,3", "iPad15,4":
+            return "iPad Air 11-inch (M3)"
+        case "iPad15,5", "iPad15,6":
+            return "iPad Air 13-inch (M3)"
         // iPad
         case "iPad1,1":
             return "iPad"

@@ -48,8 +48,8 @@ let modelName = UIDevice.current.modelName
 | [iPad Air (5th generation)](https://support.apple.com/kb/SP866) | iPad13,16 \| iPad13,17        |
 | [iPad Air 11-inch (M2)](https://support.apple.com/119894)       | iPad14,8 \| iPad14,9          |
 | [iPad Air 13-inch (M2)](https://support.apple.com/119893)       | iPad14,10 \| iPad14,11        |
-| [iPad Air 11-inch (M3)](https://support.apple.com/122241)       |                               |
-| [iPad Air 13-inch (M3)](https://support.apple.com/122242)       |                               |
+| [iPad Air 11-inch (M3)](https://support.apple.com/122241)       | iPad15,3 \| iPad15,4          |
+| [iPad Air 13-inch (M3)](https://support.apple.com/122242)       | iPad15,5 \| iPad15,6          |
 
 ### iPad
 
