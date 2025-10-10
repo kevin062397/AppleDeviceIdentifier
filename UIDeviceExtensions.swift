@@ -27,7 +27,7 @@ extension UIDevice {
     }
 
     fileprivate func mapToDevice(identifier: String) -> String {
-        #if os(iOS)
+#if os(iOS)
         switch identifier {
         // iPad Pro
         case "iPad6,7", "iPad6,8":
@@ -210,6 +210,14 @@ extension UIDevice {
             return "iPhone 16 Pro Max"
         case "iPhone17,5":
             return "iPhone 16e"
+        case "iPhone18,3":
+            return "iPhone 17"
+        case "iPhone18,4":
+            return "iPhone Air"
+        case "iPhone18,1":
+            return "iPhone 17 Pro"
+        case "iPhone18,2":
+            return "iPhone 17 Pro Max"
         // iPod touch
         case "iPod1,1":
             return "iPod Touch"
@@ -231,7 +239,7 @@ extension UIDevice {
         default:
             return identifier
         }
-        #elseif os(watchOS)
+#elseif os(watchOS)
         switch identifier {
         case "Watch1,1", "Watch1,2":
             return "Apple Watch (1st generation)"
@@ -263,12 +271,18 @@ extension UIDevice {
             return "Apple Watch Ultra 2"
         case "Watch7,8", "Watch7,9", "Watch7,10", "Watch7,11":
             return "Apple Watch Series 10"
+        case "Watch7,12":
+            return "Apple Watch Ultra 3"
+        case "Watch7,13", "Watch7,14", "Watch7,15", "Watch7,16":
+            return "Apple Watch SE (3rd generation)"
+        case "Watch7,17", "Watch7,18", "Watch7,19", "Watch7,20":
+            return "Apple Watch Series 11"
         case "i386", "x86_64", "arm64":
             return "Simulator \(self.mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "watchOS"))"
         default:
             return identifier
         }
-        #elseif os(tvOS)
+#elseif os(tvOS)
         switch identifier {
         case "AppleTV1,1":
             return "Apple TV (1st generation)"
@@ -291,7 +305,7 @@ extension UIDevice {
         default:
             return identifier
         }
-        #elseif os(visionOS)
+#elseif os(visionOS)
         switch identifier {
         case "RealityDevice14,1":
             return "Apple Vision Pro"
@@ -300,6 +314,6 @@ extension UIDevice {
         default:
             return identifier
         }
-        #endif
+#endif
     }
 }
